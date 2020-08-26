@@ -74,12 +74,7 @@ entryRuleJvmTypeReference returns [EObject current=null]:
 
 // Rule JvmTypeReference
 ruleJvmTypeReference returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -136,12 +131,7 @@ entryRuleArrayBrackets returns [String current=null]:
 
 // Rule ArrayBrackets
 ruleArrayBrackets returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='['
 		{
@@ -165,12 +155,7 @@ entryRuleXFunctionTypeRef returns [EObject current=null]:
 
 // Rule XFunctionTypeRef
 ruleXFunctionTypeRef returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			otherlv_0='('
@@ -263,12 +248,7 @@ entryRuleJvmParameterizedTypeReference returns [EObject current=null]:
 
 // Rule JvmParameterizedTypeReference
 ruleJvmParameterizedTypeReference returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			(
@@ -451,12 +431,7 @@ entryRuleJvmArgumentTypeReference returns [EObject current=null]:
 
 // Rule JvmArgumentTypeReference
 ruleJvmArgumentTypeReference returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getJvmArgumentTypeReferenceAccess().getJvmTypeReferenceParserRuleCall_0());
@@ -487,12 +462,7 @@ entryRuleJvmWildcardTypeReference returns [EObject current=null]:
 
 // Rule JvmWildcardTypeReference
 ruleJvmWildcardTypeReference returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -600,12 +570,7 @@ entryRuleJvmUpperBound returns [EObject current=null]:
 
 // Rule JvmUpperBound
 ruleJvmUpperBound returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='extends'
 		{
@@ -642,12 +607,7 @@ entryRuleJvmUpperBoundAnded returns [EObject current=null]:
 
 // Rule JvmUpperBoundAnded
 ruleJvmUpperBoundAnded returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='&'
 		{
@@ -684,12 +644,7 @@ entryRuleJvmLowerBound returns [EObject current=null]:
 
 // Rule JvmLowerBound
 ruleJvmLowerBound returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='super'
 		{
@@ -726,12 +681,7 @@ entryRuleJvmLowerBoundAnded returns [EObject current=null]:
 
 // Rule JvmLowerBoundAnded
 ruleJvmLowerBoundAnded returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='&'
 		{
@@ -768,12 +718,7 @@ entryRuleQualifiedName returns [String current=null]:
 
 // Rule QualifiedName
 ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getQualifiedNameAccess().getValidIDParserRuleCall_0());
@@ -814,12 +759,7 @@ entryRuleQualifiedNameWithWildcard returns [String current=null]:
 
 // Rule QualifiedNameWithWildcard
 ruleQualifiedNameWithWildcard returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getQualifiedNameWithWildcardAccess().getQualifiedNameParserRuleCall_0());
@@ -853,12 +793,7 @@ entryRuleValidID returns [String current=null]:
 
 // Rule ValidID
 ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	this_ID_0=RULE_ID
 	{
 		$current.merge(this_ID_0);
@@ -877,12 +812,7 @@ entryRuleXImportDeclaration returns [EObject current=null]:
 
 // Rule XImportDeclaration
 ruleXImportDeclaration returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='import'
 		{
@@ -1027,12 +957,7 @@ entryRuleQualifiedNameInStaticImport returns [String current=null]:
 
 // Rule QualifiedNameInStaticImport
 ruleQualifiedNameInStaticImport returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getQualifiedNameInStaticImportAccess().getValidIDParserRuleCall_0());

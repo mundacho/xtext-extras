@@ -74,12 +74,7 @@ entryRuleXExpression returns [EObject current=null]:
 
 // Rule XExpression
 ruleXExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	{
 		newCompositeNode(grammarAccess.getXExpressionAccess().getXAssignmentParserRuleCall());
 	}
@@ -99,12 +94,7 @@ entryRuleXAssignment returns [EObject current=null]:
 
 // Rule XAssignment
 ruleXAssignment returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			(
@@ -238,12 +228,7 @@ entryRuleOpSingleAssign returns [String current=null]:
 
 // Rule OpSingleAssign
 ruleOpSingleAssign returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	kw='='
 	{
 		$current.merge(kw);
@@ -260,12 +245,7 @@ entryRuleOpMultiAssign returns [String current=null]:
 
 // Rule OpMultiAssign
 ruleOpMultiAssign returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='+='
 		{
@@ -346,12 +326,7 @@ entryRuleXOrExpression returns [EObject current=null]:
 
 // Rule XOrExpression
 ruleXOrExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXOrExpressionAccess().getXAndExpressionParserRuleCall_0());
@@ -431,12 +406,7 @@ entryRuleOpOr returns [String current=null]:
 
 // Rule OpOr
 ruleOpOr returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	kw='||'
 	{
 		$current.merge(kw);
@@ -453,12 +423,7 @@ entryRuleXAndExpression returns [EObject current=null]:
 
 // Rule XAndExpression
 ruleXAndExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXAndExpressionAccess().getXEqualityExpressionParserRuleCall_0());
@@ -538,12 +503,7 @@ entryRuleOpAnd returns [String current=null]:
 
 // Rule OpAnd
 ruleOpAnd returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	kw='&&'
 	{
 		$current.merge(kw);
@@ -560,12 +520,7 @@ entryRuleXEqualityExpression returns [EObject current=null]:
 
 // Rule XEqualityExpression
 ruleXEqualityExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXEqualityExpressionAccess().getXRelationalExpressionParserRuleCall_0());
@@ -645,12 +600,7 @@ entryRuleOpEquality returns [String current=null]:
 
 // Rule OpEquality
 ruleOpEquality returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='=='
 		{
@@ -687,12 +637,7 @@ entryRuleXRelationalExpression returns [EObject current=null]:
 
 // Rule XRelationalExpression
 ruleXRelationalExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXRelationalExpressionAccess().getXOtherOperatorExpressionParserRuleCall_0());
@@ -817,12 +762,7 @@ entryRuleOpCompare returns [String current=null]:
 
 // Rule OpCompare
 ruleOpCompare returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='>='
 		{
@@ -866,12 +806,7 @@ entryRuleXOtherOperatorExpression returns [EObject current=null]:
 
 // Rule XOtherOperatorExpression
 ruleXOtherOperatorExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXOtherOperatorExpressionAccess().getXAdditiveExpressionParserRuleCall_0());
@@ -951,12 +886,7 @@ entryRuleOpOther returns [String current=null]:
 
 // Rule OpOther
 ruleOpOther returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='->'
 		{
@@ -1094,12 +1024,7 @@ entryRuleXAdditiveExpression returns [EObject current=null]:
 
 // Rule XAdditiveExpression
 ruleXAdditiveExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXAdditiveExpressionAccess().getXMultiplicativeExpressionParserRuleCall_0());
@@ -1179,12 +1104,7 @@ entryRuleOpAdd returns [String current=null]:
 
 // Rule OpAdd
 ruleOpAdd returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='+'
 		{
@@ -1209,12 +1129,7 @@ entryRuleXMultiplicativeExpression returns [EObject current=null]:
 
 // Rule XMultiplicativeExpression
 ruleXMultiplicativeExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXMultiplicativeExpressionAccess().getXUnaryOperationParserRuleCall_0());
@@ -1294,12 +1209,7 @@ entryRuleOpMulti returns [String current=null]:
 
 // Rule OpMulti
 ruleOpMulti returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='*'
 		{
@@ -1336,12 +1246,7 @@ entryRuleXUnaryOperation returns [EObject current=null]:
 
 // Rule XUnaryOperation
 ruleXUnaryOperation returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			(
@@ -1408,12 +1313,7 @@ entryRuleOpUnary returns [String current=null]:
 
 // Rule OpUnary
 ruleOpUnary returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='!'
 		{
@@ -1444,12 +1344,7 @@ entryRuleXCastedExpression returns [EObject current=null]:
 
 // Rule XCastedExpression
 ruleXCastedExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXCastedExpressionAccess().getXPostfixOperationParserRuleCall_0());
@@ -1513,12 +1408,7 @@ entryRuleXPostfixOperation returns [EObject current=null]:
 
 // Rule XPostfixOperation
 ruleXPostfixOperation returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXPostfixOperationAccess().getXMemberFeatureCallParserRuleCall_0());
@@ -1577,12 +1467,7 @@ entryRuleOpPostfix returns [String current=null]:
 
 // Rule OpPostfix
 ruleOpPostfix returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='++'
 		{
@@ -1607,12 +1492,7 @@ entryRuleXMemberFeatureCall returns [EObject current=null]:
 
 // Rule XMemberFeatureCall
 ruleXMemberFeatureCall returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXMemberFeatureCallAccess().getXPrimaryExpressionParserRuleCall_0());
@@ -2014,12 +1894,7 @@ entryRuleXPrimaryExpression returns [EObject current=null]:
 
 // Rule XPrimaryExpression
 ruleXPrimaryExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXPrimaryExpressionAccess().getXConstructorCallParserRuleCall_0());
@@ -2191,12 +2066,7 @@ entryRuleXLiteral returns [EObject current=null]:
 
 // Rule XLiteral
 ruleXLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXLiteralAccess().getXCollectionLiteralParserRuleCall_0());
@@ -2280,12 +2150,7 @@ entryRuleXCollectionLiteral returns [EObject current=null]:
 
 // Rule XCollectionLiteral
 ruleXCollectionLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXCollectionLiteralAccess().getXSetLiteralParserRuleCall_0());
@@ -2316,12 +2181,7 @@ entryRuleXSetLiteral returns [EObject current=null]:
 
 // Rule XSetLiteral
 ruleXSetLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -2400,12 +2260,7 @@ entryRuleXListLiteral returns [EObject current=null]:
 
 // Rule XListLiteral
 ruleXListLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -2484,12 +2339,7 @@ entryRuleXClosure returns [EObject current=null]:
 
 // Rule XClosure
 ruleXClosure returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			((
@@ -2634,12 +2484,7 @@ entryRuleXExpressionInClosure returns [EObject current=null]:
 
 // Rule XExpressionInClosure
 ruleXExpressionInClosure returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -2687,12 +2532,7 @@ entryRuleXShortClosure returns [EObject current=null]:
 
 // Rule XShortClosure
 ruleXShortClosure returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			((
@@ -2821,12 +2661,7 @@ entryRuleXParenthesizedExpression returns [EObject current=null]:
 
 // Rule XParenthesizedExpression
 ruleXParenthesizedExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='('
 		{
@@ -2856,12 +2691,7 @@ entryRuleXIfExpression returns [EObject current=null]:
 
 // Rule XIfExpression
 ruleXIfExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -2960,12 +2790,7 @@ entryRuleXSwitchExpression returns [EObject current=null]:
 
 // Rule XSwitchExpression
 ruleXSwitchExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -3172,12 +2997,7 @@ entryRuleXCasePart returns [EObject current=null]:
 
 // Rule XCasePart
 ruleXCasePart returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -3284,12 +3104,7 @@ entryRuleXForLoopExpression returns [EObject current=null]:
 
 // Rule XForLoopExpression
 ruleXForLoopExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			((
@@ -3400,12 +3215,7 @@ entryRuleXBasicForLoopExpression returns [EObject current=null]:
 
 // Rule XBasicForLoopExpression
 ruleXBasicForLoopExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -3576,12 +3386,7 @@ entryRuleXWhileExpression returns [EObject current=null]:
 
 // Rule XWhileExpression
 ruleXWhileExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -3652,12 +3457,7 @@ entryRuleXDoWhileExpression returns [EObject current=null]:
 
 // Rule XDoWhileExpression
 ruleXDoWhileExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -3732,12 +3532,7 @@ entryRuleXBlockExpression returns [EObject current=null]:
 
 // Rule XBlockExpression
 ruleXBlockExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -3793,12 +3588,7 @@ entryRuleXExpressionOrVarDeclaration returns [EObject current=null]:
 
 // Rule XExpressionOrVarDeclaration
 ruleXExpressionOrVarDeclaration returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getXExpressionOrVarDeclarationAccess().getXVariableDeclarationParserRuleCall_0());
@@ -3829,12 +3619,7 @@ entryRuleXVariableDeclaration returns [EObject current=null]:
 
 // Rule XVariableDeclaration
 ruleXVariableDeclaration returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -3978,12 +3763,7 @@ entryRuleJvmFormalParameter returns [EObject current=null]:
 
 // Rule JvmFormalParameter
 ruleJvmFormalParameter returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			(
@@ -4035,12 +3815,7 @@ entryRuleFullJvmFormalParameter returns [EObject current=null]:
 
 // Rule FullJvmFormalParameter
 ruleFullJvmFormalParameter returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			(
@@ -4092,12 +3867,7 @@ entryRuleXFeatureCall returns [EObject current=null]:
 
 // Rule XFeatureCall
 ruleXFeatureCall returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -4330,12 +4100,7 @@ entryRuleFeatureCallID returns [String current=null]:
 
 // Rule FeatureCallID
 ruleFeatureCallID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getFeatureCallIDAccess().getValidIDParserRuleCall_0());
@@ -4383,12 +4148,7 @@ entryRuleIdOrSuper returns [String current=null]:
 
 // Rule IdOrSuper
 ruleIdOrSuper returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getIdOrSuperAccess().getFeatureCallIDParserRuleCall_0());
@@ -4418,12 +4178,7 @@ entryRuleXConstructorCall returns [EObject current=null]:
 
 // Rule XConstructorCall
 ruleXConstructorCall returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -4663,12 +4418,7 @@ entryRuleXBooleanLiteral returns [EObject current=null]:
 
 // Rule XBooleanLiteral
 ruleXBooleanLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -4710,12 +4460,7 @@ entryRuleXNullLiteral returns [EObject current=null]:
 
 // Rule XNullLiteral
 ruleXNullLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -4740,12 +4485,7 @@ entryRuleXNumberLiteral returns [EObject current=null]:
 
 // Rule XNumberLiteral
 ruleXNumberLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -4785,12 +4525,7 @@ entryRuleXStringLiteral returns [EObject current=null]:
 
 // Rule XStringLiteral
 ruleXStringLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -4829,12 +4564,7 @@ entryRuleXTypeLiteral returns [EObject current=null]:
 
 // Rule XTypeLiteral
 ruleXTypeLiteral returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -4902,12 +4632,7 @@ entryRuleXThrowExpression returns [EObject current=null]:
 
 // Rule XThrowExpression
 ruleXThrowExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -4951,12 +4676,7 @@ entryRuleXReturnExpression returns [EObject current=null]:
 
 // Rule XReturnExpression
 ruleXReturnExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -5001,12 +4721,7 @@ entryRuleXTryCatchFinallyExpression returns [EObject current=null]:
 
 // Rule XTryCatchFinallyExpression
 ruleXTryCatchFinallyExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -5128,12 +4843,7 @@ entryRuleXSynchronizedExpression returns [EObject current=null]:
 
 // Rule XSynchronizedExpression
 ruleXSynchronizedExpression returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			((
@@ -5215,12 +4925,7 @@ entryRuleXCatchClause returns [EObject current=null]:
 
 // Rule XCatchClause
 ruleXCatchClause returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			('catch')=>
@@ -5287,12 +4992,7 @@ entryRuleQualifiedName returns [String current=null]:
 
 // Rule QualifiedName
 ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getQualifiedNameAccess().getValidIDParserRuleCall_0());
@@ -5342,12 +5042,9 @@ finally {
 // Rule Number
 ruleNumber returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
 @init {
-	enterRule();
 	HiddenTokens myHiddenTokenState = ((XtextTokenStream)input).setHiddenTokens();
 }
-@after {
-	leaveRule();
-}:
+:
 	(
 		this_HEX_0=RULE_HEX
 		{
@@ -5415,12 +5112,7 @@ entryRuleJvmTypeReference returns [EObject current=null]:
 
 // Rule JvmTypeReference
 ruleJvmTypeReference returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -5477,12 +5169,7 @@ entryRuleArrayBrackets returns [String current=null]:
 
 // Rule ArrayBrackets
 ruleArrayBrackets returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		kw='['
 		{
@@ -5506,12 +5193,7 @@ entryRuleXFunctionTypeRef returns [EObject current=null]:
 
 // Rule XFunctionTypeRef
 ruleXFunctionTypeRef returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			otherlv_0='('
@@ -5604,12 +5286,7 @@ entryRuleJvmParameterizedTypeReference returns [EObject current=null]:
 
 // Rule JvmParameterizedTypeReference
 ruleJvmParameterizedTypeReference returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			(
@@ -5792,12 +5469,7 @@ entryRuleJvmArgumentTypeReference returns [EObject current=null]:
 
 // Rule JvmArgumentTypeReference
 ruleJvmArgumentTypeReference returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getJvmArgumentTypeReferenceAccess().getJvmTypeReferenceParserRuleCall_0());
@@ -5828,12 +5500,7 @@ entryRuleJvmWildcardTypeReference returns [EObject current=null]:
 
 // Rule JvmWildcardTypeReference
 ruleJvmWildcardTypeReference returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -5941,12 +5608,7 @@ entryRuleJvmUpperBound returns [EObject current=null]:
 
 // Rule JvmUpperBound
 ruleJvmUpperBound returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='extends'
 		{
@@ -5983,12 +5645,7 @@ entryRuleJvmUpperBoundAnded returns [EObject current=null]:
 
 // Rule JvmUpperBoundAnded
 ruleJvmUpperBoundAnded returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='&'
 		{
@@ -6025,12 +5682,7 @@ entryRuleJvmLowerBound returns [EObject current=null]:
 
 // Rule JvmLowerBound
 ruleJvmLowerBound returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='super'
 		{
@@ -6067,12 +5719,7 @@ entryRuleJvmLowerBoundAnded returns [EObject current=null]:
 
 // Rule JvmLowerBoundAnded
 ruleJvmLowerBoundAnded returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='&'
 		{
@@ -6109,12 +5756,7 @@ entryRuleQualifiedNameWithWildcard returns [String current=null]:
 
 // Rule QualifiedNameWithWildcard
 ruleQualifiedNameWithWildcard returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getQualifiedNameWithWildcardAccess().getQualifiedNameParserRuleCall_0());
@@ -6148,12 +5790,7 @@ entryRuleValidID returns [String current=null]:
 
 // Rule ValidID
 ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	this_ID_0=RULE_ID
 	{
 		$current.merge(this_ID_0);
@@ -6172,12 +5809,7 @@ entryRuleXImportDeclaration returns [EObject current=null]:
 
 // Rule XImportDeclaration
 ruleXImportDeclaration returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='import'
 		{
@@ -6322,12 +5954,7 @@ entryRuleQualifiedNameInStaticImport returns [String current=null]:
 
 // Rule QualifiedNameInStaticImport
 ruleQualifiedNameInStaticImport returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		{
 			newCompositeNode(grammarAccess.getQualifiedNameInStaticImportAccess().getValidIDParserRuleCall_0());
