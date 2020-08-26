@@ -7,6 +7,8 @@ import org.eclipse.xtext.xtext.generator.*
 import org.eclipse.xtext.xtext.generator.model.project.*
 
 var rootPath = ".."
+var eclipsePluginPath = "../../xtext-eclipse/org.eclipse.xtext.purexbase.ui"
+var eclipsePluginTestPath = "../../xtext-eclipse/org.eclipse.xtext.purexbase.eclipse.tests"
 
 Workflow {
 	bean = StandaloneSetup {
@@ -23,11 +25,11 @@ Workflow {
 				}
 				eclipsePlugin = {
 					enabled = true
-					root = "../../xtext-eclipse/org.eclipse.xtext.purexbase.ui"
+					root = eclipsePluginPath
 				}
 				eclipsePluginTest = {
 					enabled = true
-					root = "../../xtext-eclipse/org.eclipse.xtext.purexbase.eclipse.tests"
+					root = eclipsePluginTestPath
 				}
 				createEclipseMetaData = true
 			}

@@ -5,6 +5,8 @@ import org.eclipse.xtext.xtext.generator.*
 
 var rootPath = ".."
 var generateEclipse = true
+var eclipsePluginPath = "${rootPath}/../xtext-eclipse/org.eclipse.xtext.xbase.testlanguages.ui"
+var eclipsePluginTestPath = "${rootPath}/../xtext-eclipse/org.eclipse.xtext.xbase.ui.tests"
 
 Workflow {
 	bean = StandaloneSetup {
@@ -29,12 +31,12 @@ Workflow {
 				
 				eclipsePlugin = {
 					enabled = generateEclipse
-					root = "${rootPath}/../xtext-eclipse/org.eclipse.xtext.xbase.testlanguages.ui"
+					root = eclipsePluginPath
 				}
 				
 				eclipsePluginTest= {
 					enabled = generateEclipse
-					root = "${rootPath}/../xtext-eclipse/org.eclipse.xtext.xbase.ui.tests"
+					root = eclipsePluginTestPath
 				}
 				
 				createEclipseMetaData = true
