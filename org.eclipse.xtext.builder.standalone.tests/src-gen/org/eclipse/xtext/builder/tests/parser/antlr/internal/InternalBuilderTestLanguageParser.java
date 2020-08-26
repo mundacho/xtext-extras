@@ -126,14 +126,11 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
         EObject this_Element_1 = null;
 
 
-
-        	enterRule();
-
         try {
-            // InternalBuilderTestLanguage.g:77:2: ( (this_Namespace_0= ruleNamespace | this_Element_1= ruleElement ) )
-            // InternalBuilderTestLanguage.g:78:2: (this_Namespace_0= ruleNamespace | this_Element_1= ruleElement )
+            // InternalBuilderTestLanguage.g:72:1: ( (this_Namespace_0= ruleNamespace | this_Element_1= ruleElement ) )
+            // InternalBuilderTestLanguage.g:73:2: (this_Namespace_0= ruleNamespace | this_Element_1= ruleElement )
             {
-            // InternalBuilderTestLanguage.g:78:2: (this_Namespace_0= ruleNamespace | this_Element_1= ruleElement )
+            // InternalBuilderTestLanguage.g:73:2: (this_Namespace_0= ruleNamespace | this_Element_1= ruleElement )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -151,7 +148,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
             }
             switch (alt1) {
                 case 1 :
-                    // InternalBuilderTestLanguage.g:79:3: this_Namespace_0= ruleNamespace
+                    // InternalBuilderTestLanguage.g:74:3: this_Namespace_0= ruleNamespace
                     {
 
                     			newCompositeNode(grammarAccess.getNamedElementAccess().getNamespaceParserRuleCall_0());
@@ -169,7 +166,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
                     }
                     break;
                 case 2 :
-                    // InternalBuilderTestLanguage.g:88:3: this_Element_1= ruleElement
+                    // InternalBuilderTestLanguage.g:83:3: this_Element_1= ruleElement
                     {
 
                     			newCompositeNode(grammarAccess.getNamedElementAccess().getElementParserRuleCall_1());
@@ -192,9 +189,6 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
             }
 
-
-            	leaveRule();
-
         }
 
             catch (RecognitionException re) {
@@ -209,7 +203,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
     // $ANTLR start "entryRuleNamespace"
-    // InternalBuilderTestLanguage.g:100:1: entryRuleNamespace returns [EObject current=null] : iv_ruleNamespace= ruleNamespace EOF ;
+    // InternalBuilderTestLanguage.g:95:1: entryRuleNamespace returns [EObject current=null] : iv_ruleNamespace= ruleNamespace EOF ;
     public final EObject entryRuleNamespace() throws RecognitionException {
         EObject current = null;
 
@@ -217,8 +211,8 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
         try {
-            // InternalBuilderTestLanguage.g:100:50: (iv_ruleNamespace= ruleNamespace EOF )
-            // InternalBuilderTestLanguage.g:101:2: iv_ruleNamespace= ruleNamespace EOF
+            // InternalBuilderTestLanguage.g:95:50: (iv_ruleNamespace= ruleNamespace EOF )
+            // InternalBuilderTestLanguage.g:96:2: iv_ruleNamespace= ruleNamespace EOF
             {
              newCompositeNode(grammarAccess.getNamespaceRule()); 
             pushFollow(FollowSets000.FOLLOW_1);
@@ -245,7 +239,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
     // $ANTLR start "ruleNamespace"
-    // InternalBuilderTestLanguage.g:107:1: ruleNamespace returns [EObject current=null] : (otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}' ) ;
+    // InternalBuilderTestLanguage.g:102:1: ruleNamespace returns [EObject current=null] : (otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}' ) ;
     public final EObject ruleNamespace() throws RecognitionException {
         EObject current = null;
 
@@ -259,25 +253,22 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
         EObject lv_elements_4_0 = null;
 
 
-
-        	enterRule();
-
         try {
-            // InternalBuilderTestLanguage.g:113:2: ( (otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}' ) )
-            // InternalBuilderTestLanguage.g:114:2: (otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}' )
+            // InternalBuilderTestLanguage.g:103:1: ( (otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}' ) )
+            // InternalBuilderTestLanguage.g:104:2: (otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}' )
             {
-            // InternalBuilderTestLanguage.g:114:2: (otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}' )
-            // InternalBuilderTestLanguage.g:115:3: otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}'
+            // InternalBuilderTestLanguage.g:104:2: (otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}' )
+            // InternalBuilderTestLanguage.g:105:3: otherlv_0= 'namespace' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_imports_3_0= ruleImport ) )* ( (lv_elements_4_0= ruleNamedElement ) )* otherlv_5= '}'
             {
             otherlv_0=(Token)match(input,11,FollowSets000.FOLLOW_3); 
 
             			newLeafNode(otherlv_0, grammarAccess.getNamespaceAccess().getNamespaceKeyword_0());
             		
-            // InternalBuilderTestLanguage.g:119:3: ( (lv_name_1_0= ruleQualifiedName ) )
-            // InternalBuilderTestLanguage.g:120:4: (lv_name_1_0= ruleQualifiedName )
+            // InternalBuilderTestLanguage.g:109:3: ( (lv_name_1_0= ruleQualifiedName ) )
+            // InternalBuilderTestLanguage.g:110:4: (lv_name_1_0= ruleQualifiedName )
             {
-            // InternalBuilderTestLanguage.g:120:4: (lv_name_1_0= ruleQualifiedName )
-            // InternalBuilderTestLanguage.g:121:5: lv_name_1_0= ruleQualifiedName
+            // InternalBuilderTestLanguage.g:110:4: (lv_name_1_0= ruleQualifiedName )
+            // InternalBuilderTestLanguage.g:111:5: lv_name_1_0= ruleQualifiedName
             {
 
             					newCompositeNode(grammarAccess.getNamespaceAccess().getNameQualifiedNameParserRuleCall_1_0());
@@ -308,7 +299,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
             			newLeafNode(otherlv_2, grammarAccess.getNamespaceAccess().getLeftCurlyBracketKeyword_2());
             		
-            // InternalBuilderTestLanguage.g:142:3: ( (lv_imports_3_0= ruleImport ) )*
+            // InternalBuilderTestLanguage.g:132:3: ( (lv_imports_3_0= ruleImport ) )*
             loop2:
             do {
                 int alt2=2;
@@ -321,10 +312,10 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
                 switch (alt2) {
             	case 1 :
-            	    // InternalBuilderTestLanguage.g:143:4: (lv_imports_3_0= ruleImport )
+            	    // InternalBuilderTestLanguage.g:133:4: (lv_imports_3_0= ruleImport )
             	    {
-            	    // InternalBuilderTestLanguage.g:143:4: (lv_imports_3_0= ruleImport )
-            	    // InternalBuilderTestLanguage.g:144:5: lv_imports_3_0= ruleImport
+            	    // InternalBuilderTestLanguage.g:133:4: (lv_imports_3_0= ruleImport )
+            	    // InternalBuilderTestLanguage.g:134:5: lv_imports_3_0= ruleImport
             	    {
 
             	    					newCompositeNode(grammarAccess.getNamespaceAccess().getImportsImportParserRuleCall_3_0());
@@ -357,7 +348,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
                 }
             } while (true);
 
-            // InternalBuilderTestLanguage.g:161:3: ( (lv_elements_4_0= ruleNamedElement ) )*
+            // InternalBuilderTestLanguage.g:151:3: ( (lv_elements_4_0= ruleNamedElement ) )*
             loop3:
             do {
                 int alt3=2;
@@ -370,10 +361,10 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
                 switch (alt3) {
             	case 1 :
-            	    // InternalBuilderTestLanguage.g:162:4: (lv_elements_4_0= ruleNamedElement )
+            	    // InternalBuilderTestLanguage.g:152:4: (lv_elements_4_0= ruleNamedElement )
             	    {
-            	    // InternalBuilderTestLanguage.g:162:4: (lv_elements_4_0= ruleNamedElement )
-            	    // InternalBuilderTestLanguage.g:163:5: lv_elements_4_0= ruleNamedElement
+            	    // InternalBuilderTestLanguage.g:152:4: (lv_elements_4_0= ruleNamedElement )
+            	    // InternalBuilderTestLanguage.g:153:5: lv_elements_4_0= ruleNamedElement
             	    {
 
             	    					newCompositeNode(grammarAccess.getNamespaceAccess().getElementsNamedElementParserRuleCall_4_0());
@@ -416,9 +407,6 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
             }
 
-
-            	leaveRule();
-
         }
 
             catch (RecognitionException re) {
@@ -433,7 +421,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
     // $ANTLR start "entryRuleImport"
-    // InternalBuilderTestLanguage.g:188:1: entryRuleImport returns [EObject current=null] : iv_ruleImport= ruleImport EOF ;
+    // InternalBuilderTestLanguage.g:178:1: entryRuleImport returns [EObject current=null] : iv_ruleImport= ruleImport EOF ;
     public final EObject entryRuleImport() throws RecognitionException {
         EObject current = null;
 
@@ -441,8 +429,8 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
         try {
-            // InternalBuilderTestLanguage.g:188:47: (iv_ruleImport= ruleImport EOF )
-            // InternalBuilderTestLanguage.g:189:2: iv_ruleImport= ruleImport EOF
+            // InternalBuilderTestLanguage.g:178:47: (iv_ruleImport= ruleImport EOF )
+            // InternalBuilderTestLanguage.g:179:2: iv_ruleImport= ruleImport EOF
             {
              newCompositeNode(grammarAccess.getImportRule()); 
             pushFollow(FollowSets000.FOLLOW_1);
@@ -469,7 +457,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
     // $ANTLR start "ruleImport"
-    // InternalBuilderTestLanguage.g:195:1: ruleImport returns [EObject current=null] : (otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) ) ) ;
+    // InternalBuilderTestLanguage.g:185:1: ruleImport returns [EObject current=null] : (otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) ) ) ;
     public final EObject ruleImport() throws RecognitionException {
         EObject current = null;
 
@@ -477,25 +465,22 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
         AntlrDatatypeRuleToken lv_importedNamespace_1_0 = null;
 
 
-
-        	enterRule();
-
         try {
-            // InternalBuilderTestLanguage.g:201:2: ( (otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) ) ) )
-            // InternalBuilderTestLanguage.g:202:2: (otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) ) )
+            // InternalBuilderTestLanguage.g:186:1: ( (otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) ) ) )
+            // InternalBuilderTestLanguage.g:187:2: (otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) ) )
             {
-            // InternalBuilderTestLanguage.g:202:2: (otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) ) )
-            // InternalBuilderTestLanguage.g:203:3: otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) )
+            // InternalBuilderTestLanguage.g:187:2: (otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) ) )
+            // InternalBuilderTestLanguage.g:188:3: otherlv_0= 'import' ( (lv_importedNamespace_1_0= ruleQualifiedName ) )
             {
             otherlv_0=(Token)match(input,14,FollowSets000.FOLLOW_3); 
 
             			newLeafNode(otherlv_0, grammarAccess.getImportAccess().getImportKeyword_0());
             		
-            // InternalBuilderTestLanguage.g:207:3: ( (lv_importedNamespace_1_0= ruleQualifiedName ) )
-            // InternalBuilderTestLanguage.g:208:4: (lv_importedNamespace_1_0= ruleQualifiedName )
+            // InternalBuilderTestLanguage.g:192:3: ( (lv_importedNamespace_1_0= ruleQualifiedName ) )
+            // InternalBuilderTestLanguage.g:193:4: (lv_importedNamespace_1_0= ruleQualifiedName )
             {
-            // InternalBuilderTestLanguage.g:208:4: (lv_importedNamespace_1_0= ruleQualifiedName )
-            // InternalBuilderTestLanguage.g:209:5: lv_importedNamespace_1_0= ruleQualifiedName
+            // InternalBuilderTestLanguage.g:193:4: (lv_importedNamespace_1_0= ruleQualifiedName )
+            // InternalBuilderTestLanguage.g:194:5: lv_importedNamespace_1_0= ruleQualifiedName
             {
 
             					newCompositeNode(grammarAccess.getImportAccess().getImportedNamespaceQualifiedNameParserRuleCall_1_0());
@@ -528,9 +513,6 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
             }
 
-
-            	leaveRule();
-
         }
 
             catch (RecognitionException re) {
@@ -545,7 +527,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
     // $ANTLR start "entryRuleElement"
-    // InternalBuilderTestLanguage.g:230:1: entryRuleElement returns [EObject current=null] : iv_ruleElement= ruleElement EOF ;
+    // InternalBuilderTestLanguage.g:215:1: entryRuleElement returns [EObject current=null] : iv_ruleElement= ruleElement EOF ;
     public final EObject entryRuleElement() throws RecognitionException {
         EObject current = null;
 
@@ -553,8 +535,8 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
         try {
-            // InternalBuilderTestLanguage.g:230:48: (iv_ruleElement= ruleElement EOF )
-            // InternalBuilderTestLanguage.g:231:2: iv_ruleElement= ruleElement EOF
+            // InternalBuilderTestLanguage.g:215:48: (iv_ruleElement= ruleElement EOF )
+            // InternalBuilderTestLanguage.g:216:2: iv_ruleElement= ruleElement EOF
             {
              newCompositeNode(grammarAccess.getElementRule()); 
             pushFollow(FollowSets000.FOLLOW_1);
@@ -581,7 +563,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
     // $ANTLR start "ruleElement"
-    // InternalBuilderTestLanguage.g:237:1: ruleElement returns [EObject current=null] : (otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )? ) ;
+    // InternalBuilderTestLanguage.g:222:1: ruleElement returns [EObject current=null] : (otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )? ) ;
     public final EObject ruleElement() throws RecognitionException {
         EObject current = null;
 
@@ -591,25 +573,22 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
         Token otherlv_4=null;
         Token otherlv_6=null;
 
-
-        	enterRule();
-
         try {
-            // InternalBuilderTestLanguage.g:243:2: ( (otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )? ) )
-            // InternalBuilderTestLanguage.g:244:2: (otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )? )
+            // InternalBuilderTestLanguage.g:223:1: ( (otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )? ) )
+            // InternalBuilderTestLanguage.g:224:2: (otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )? )
             {
-            // InternalBuilderTestLanguage.g:244:2: (otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )? )
-            // InternalBuilderTestLanguage.g:245:3: otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )?
+            // InternalBuilderTestLanguage.g:224:2: (otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )? )
+            // InternalBuilderTestLanguage.g:225:3: otherlv_0= 'object' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )? (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )?
             {
             otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_3); 
 
             			newLeafNode(otherlv_0, grammarAccess.getElementAccess().getObjectKeyword_0());
             		
-            // InternalBuilderTestLanguage.g:249:3: ( (lv_name_1_0= RULE_ID ) )
-            // InternalBuilderTestLanguage.g:250:4: (lv_name_1_0= RULE_ID )
+            // InternalBuilderTestLanguage.g:229:3: ( (lv_name_1_0= RULE_ID ) )
+            // InternalBuilderTestLanguage.g:230:4: (lv_name_1_0= RULE_ID )
             {
-            // InternalBuilderTestLanguage.g:250:4: (lv_name_1_0= RULE_ID )
-            // InternalBuilderTestLanguage.g:251:5: lv_name_1_0= RULE_ID
+            // InternalBuilderTestLanguage.g:230:4: (lv_name_1_0= RULE_ID )
+            // InternalBuilderTestLanguage.g:231:5: lv_name_1_0= RULE_ID
             {
             lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_7); 
 
@@ -631,7 +610,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
             }
 
-            // InternalBuilderTestLanguage.g:267:3: (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )?
+            // InternalBuilderTestLanguage.g:247:3: (otherlv_2= 'references' ( ( ruleQualifiedName ) ) )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -640,17 +619,17 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
             }
             switch (alt4) {
                 case 1 :
-                    // InternalBuilderTestLanguage.g:268:4: otherlv_2= 'references' ( ( ruleQualifiedName ) )
+                    // InternalBuilderTestLanguage.g:248:4: otherlv_2= 'references' ( ( ruleQualifiedName ) )
                     {
                     otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_3); 
 
                     				newLeafNode(otherlv_2, grammarAccess.getElementAccess().getReferencesKeyword_2_0());
                     			
-                    // InternalBuilderTestLanguage.g:272:4: ( ( ruleQualifiedName ) )
-                    // InternalBuilderTestLanguage.g:273:5: ( ruleQualifiedName )
+                    // InternalBuilderTestLanguage.g:252:4: ( ( ruleQualifiedName ) )
+                    // InternalBuilderTestLanguage.g:253:5: ( ruleQualifiedName )
                     {
-                    // InternalBuilderTestLanguage.g:273:5: ( ruleQualifiedName )
-                    // InternalBuilderTestLanguage.g:274:6: ruleQualifiedName
+                    // InternalBuilderTestLanguage.g:253:5: ( ruleQualifiedName )
+                    // InternalBuilderTestLanguage.g:254:6: ruleQualifiedName
                     {
 
                     						if (current==null) {
@@ -680,7 +659,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
             }
 
-            // InternalBuilderTestLanguage.g:289:3: (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )?
+            // InternalBuilderTestLanguage.g:269:3: (otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )* )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -689,17 +668,17 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
             }
             switch (alt6) {
                 case 1 :
-                    // InternalBuilderTestLanguage.g:290:4: otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )*
+                    // InternalBuilderTestLanguage.g:270:4: otherlv_4= 'otherRefs' ( ( ruleQualifiedName ) ) (otherlv_6= ',' ( ( ruleQualifiedName ) ) )*
                     {
                     otherlv_4=(Token)match(input,17,FollowSets000.FOLLOW_3); 
 
                     				newLeafNode(otherlv_4, grammarAccess.getElementAccess().getOtherRefsKeyword_3_0());
                     			
-                    // InternalBuilderTestLanguage.g:294:4: ( ( ruleQualifiedName ) )
-                    // InternalBuilderTestLanguage.g:295:5: ( ruleQualifiedName )
+                    // InternalBuilderTestLanguage.g:274:4: ( ( ruleQualifiedName ) )
+                    // InternalBuilderTestLanguage.g:275:5: ( ruleQualifiedName )
                     {
-                    // InternalBuilderTestLanguage.g:295:5: ( ruleQualifiedName )
-                    // InternalBuilderTestLanguage.g:296:6: ruleQualifiedName
+                    // InternalBuilderTestLanguage.g:275:5: ( ruleQualifiedName )
+                    // InternalBuilderTestLanguage.g:276:6: ruleQualifiedName
                     {
 
                     						if (current==null) {
@@ -723,7 +702,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
                     }
 
-                    // InternalBuilderTestLanguage.g:310:4: (otherlv_6= ',' ( ( ruleQualifiedName ) ) )*
+                    // InternalBuilderTestLanguage.g:290:4: (otherlv_6= ',' ( ( ruleQualifiedName ) ) )*
                     loop5:
                     do {
                         int alt5=2;
@@ -736,17 +715,17 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
                         switch (alt5) {
                     	case 1 :
-                    	    // InternalBuilderTestLanguage.g:311:5: otherlv_6= ',' ( ( ruleQualifiedName ) )
+                    	    // InternalBuilderTestLanguage.g:291:5: otherlv_6= ',' ( ( ruleQualifiedName ) )
                     	    {
                     	    otherlv_6=(Token)match(input,18,FollowSets000.FOLLOW_3); 
 
                     	    					newLeafNode(otherlv_6, grammarAccess.getElementAccess().getCommaKeyword_3_2_0());
                     	    				
-                    	    // InternalBuilderTestLanguage.g:315:5: ( ( ruleQualifiedName ) )
-                    	    // InternalBuilderTestLanguage.g:316:6: ( ruleQualifiedName )
+                    	    // InternalBuilderTestLanguage.g:295:5: ( ( ruleQualifiedName ) )
+                    	    // InternalBuilderTestLanguage.g:296:6: ( ruleQualifiedName )
                     	    {
-                    	    // InternalBuilderTestLanguage.g:316:6: ( ruleQualifiedName )
-                    	    // InternalBuilderTestLanguage.g:317:7: ruleQualifiedName
+                    	    // InternalBuilderTestLanguage.g:296:6: ( ruleQualifiedName )
+                    	    // InternalBuilderTestLanguage.g:297:7: ruleQualifiedName
                     	    {
 
                     	    							if (current==null) {
@@ -791,9 +770,6 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
             }
 
-
-            	leaveRule();
-
         }
 
             catch (RecognitionException re) {
@@ -808,7 +784,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
     // $ANTLR start "entryRuleQualifiedName"
-    // InternalBuilderTestLanguage.g:337:1: entryRuleQualifiedName returns [String current=null] : iv_ruleQualifiedName= ruleQualifiedName EOF ;
+    // InternalBuilderTestLanguage.g:317:1: entryRuleQualifiedName returns [String current=null] : iv_ruleQualifiedName= ruleQualifiedName EOF ;
     public final String entryRuleQualifiedName() throws RecognitionException {
         String current = null;
 
@@ -816,8 +792,8 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
         try {
-            // InternalBuilderTestLanguage.g:337:53: (iv_ruleQualifiedName= ruleQualifiedName EOF )
-            // InternalBuilderTestLanguage.g:338:2: iv_ruleQualifiedName= ruleQualifiedName EOF
+            // InternalBuilderTestLanguage.g:317:53: (iv_ruleQualifiedName= ruleQualifiedName EOF )
+            // InternalBuilderTestLanguage.g:318:2: iv_ruleQualifiedName= ruleQualifiedName EOF
             {
              newCompositeNode(grammarAccess.getQualifiedNameRule()); 
             pushFollow(FollowSets000.FOLLOW_1);
@@ -844,7 +820,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
     // $ANTLR start "ruleQualifiedName"
-    // InternalBuilderTestLanguage.g:344:1: ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) ;
+    // InternalBuilderTestLanguage.g:324:1: ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) ;
     public final AntlrDatatypeRuleToken ruleQualifiedName() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -852,15 +828,12 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
         Token kw=null;
         Token this_ID_2=null;
 
-
-        	enterRule();
-
         try {
-            // InternalBuilderTestLanguage.g:350:2: ( (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) )
-            // InternalBuilderTestLanguage.g:351:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
+            // InternalBuilderTestLanguage.g:325:1: ( (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) )
+            // InternalBuilderTestLanguage.g:326:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
             {
-            // InternalBuilderTestLanguage.g:351:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
-            // InternalBuilderTestLanguage.g:352:3: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )*
+            // InternalBuilderTestLanguage.g:326:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
+            // InternalBuilderTestLanguage.g:327:3: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )*
             {
             this_ID_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_10); 
 
@@ -869,7 +842,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
             			newLeafNode(this_ID_0, grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_0());
             		
-            // InternalBuilderTestLanguage.g:359:3: (kw= '.' this_ID_2= RULE_ID )*
+            // InternalBuilderTestLanguage.g:334:3: (kw= '.' this_ID_2= RULE_ID )*
             loop7:
             do {
                 int alt7=2;
@@ -882,7 +855,7 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
                 switch (alt7) {
             	case 1 :
-            	    // InternalBuilderTestLanguage.g:360:4: kw= '.' this_ID_2= RULE_ID
+            	    // InternalBuilderTestLanguage.g:335:4: kw= '.' this_ID_2= RULE_ID
             	    {
             	    kw=(Token)match(input,19,FollowSets000.FOLLOW_3); 
 
@@ -910,9 +883,6 @@ public class InternalBuilderTestLanguageParser extends AbstractInternalAntlrPars
 
 
             }
-
-
-            	leaveRule();
 
         }
 
