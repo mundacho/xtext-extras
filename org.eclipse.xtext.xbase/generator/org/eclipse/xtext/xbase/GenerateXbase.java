@@ -188,7 +188,7 @@ final class GenerateXbase {
 				addFragment(xbase);
 				addFragment(new BuilderIntegrationFragment2());
 				Formatter2Fragment2 formatterFragment = new Formatter2Fragment2();
-				formatterFragment.setGenerateXtendStub(true);
+				formatterFragment.setGenerateXtendStub(false);
 				addFragment(formatterFragment);
 				QuickfixProviderFragment2 quickfixProviderFragment2 = new QuickfixProviderFragment2();
 				quickfixProviderFragment2.setGenerateXtendStub(false);
